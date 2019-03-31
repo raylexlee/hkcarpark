@@ -4,6 +4,6 @@ fetch('https://api.data.gov.hk/v1/carpark-info-vacancy?lang=zh_TW')
   })
   .then(function(myJson) {
     const myArr = JSON.parse(JSON.stringify(myJson));  
-    console.log(myArr);
+    console.log(myArr.results[111]);
   });
 
